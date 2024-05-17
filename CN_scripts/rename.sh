@@ -1,7 +1,7 @@
 #!/bin/bash
 
-base_dir="/gpfs/data/user/ninad/ADNI/ADnifti"
-out_dir="/gpfs/data/user/ninad/ADNI/ADStandard_name"
+base_dir="path/CNnifti"
+out_dir="path/CNStandard_name"
 for subject_dir in "$base_dir"/*; do
     if [[ -d "$subject_dir" ]]; then
         for subject_modality in "$subject_dir"/*; do
