@@ -1,8 +1,8 @@
 import dicom2nifti
 import os
 
-path = '/gpfs/data/user/ninad/ADNI/CN/ADNI'
-outpath='/gpfs/data/user/ninad/ADNI/CNnifti'
+path = 'path/CN/ADNI'
+outpath='path/CNnifti'
 
 for subject in os.listdir(os.path.join(path)):
     for modality in os.listdir(os.path.join(path,subject)):
